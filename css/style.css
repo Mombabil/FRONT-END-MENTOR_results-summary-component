@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+body {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: white;
+}
+
+.layout .container {
+  width: 33%;
+  margin: auto;
+  display: flex;
+  border: 0px solid transparent;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px 1px #ebf1ff;
+}
+
+.layout .container .result, .layout .container .summary {
+  width: 50%;
+}
+
+.layout .container .result {
+  background: linear-gradient(0deg, #2e2be9 0%, #7857ff 100%);
+  border-radius: 25px;
+  padding: 12px 32px;
+}
+
+.layout .container .result h2 {
+  color: #ebf1ff;
+  text-align: center;
+}
+
+.layout .container .result .scoreNumber {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 0px solid transparent;
+  background: linear-gradient(0deg, rgba(36, 33, 202, 0) 0%, #4e21ca 100%);
+  width: 160px;
+  height: 160px;
+}
+
+.layout .container .result .scoreNumber span:first-child {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.layout .container .result .scoreNumber span:nth-child(2) {
+  color: #c8c7ff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.layout .container .result .scoreText {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.layout .container .result .scoreDetails {
+  color: #c8c7ff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.layout .container .summary {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 32px 12px 24px;
+}
+
+.layout .container .summary h2 {
+  font-weight: 700;
+  color: #303b5a;
+}
+
+.layout .container .summary .sumaries {
+  width: 100%;
+}
+
+.layout .container .summary .sumaries .sumaryCategory {
+  border: 0px solid transparent;
+  padding: 8px 6px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.layout .container .summary .sumaries .sumaryCategory .sumaryType {
+  position: relative;
+  bottom: 3px;
+  padding-left: 6px;
+  font-weight: 500;
+}
+
+.layout .container .summary .sumaries .sumaryCategory .sumaryNote {
+  float: right;
+  padding-right: 8px;
+  color: #303b5a;
+}
+
+.layout .container .summary .sumaries .sumaryCategory .sumaryNote span {
+  font-weight: 800;
+  color: black;
+}
+
+.layout .container .summary .sumaries .sumaryCategory:first-child {
+  color: #ff5757;
+  background-color: rgba(255, 87, 87, 0.05);
+}
+
+.layout .container .summary .sumaries .sumaryCategory:nth-child(2) {
+  color: #ffb01f;
+  background-color: rgba(255, 176, 31, 0.05);
+}
+
+.layout .container .summary .sumaries .sumaryCategory:nth-child(3) {
+  color: #00bd91;
+  background-color: rgba(0, 189, 145, 0.05);
+}
+
+.layout .container .summary .sumaries .sumaryCategory:nth-child(4) {
+  color: #1125d4;
+  background-color: rgba(17, 37, 212, 0.05);
+}
+
+.layout .container .summary #continue {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 8px;
+  margin-top: 24px;
+  font-weight: 700;
+  background: #303b5a;
+  color: white;
+  cursor: pointer;
+}
+
+.layout .container .summary #continue:hover {
+  background: linear-gradient(0deg, #2e2be9 0%, #7857ff 100%);
+}
+/*# sourceMappingURL=style.css.map */

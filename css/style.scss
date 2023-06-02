@@ -1,0 +1,127 @@
+@import './settings';
+
+.layout{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: $white;
+    .container{
+        width: 33%;
+        margin: auto;
+        display: flex;
+        border: 0px solid transparent;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px 1px $paleBlue;
+        .result, .summary{
+            width: 50%;
+        }
+        .result{
+            background: linear-gradient(0deg, $lightRoyalBlue 0%, $lightSlateBlue 100%);
+            border-radius: 25px;
+            padding:  12px 32px;
+            h2{
+                color: $paleBlue;
+                text-align: center;
+            }
+            .scoreNumber{
+                width: 50%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 0px solid transparent;
+                background: linear-gradient(0deg, $persianBlue 0%, $violetBlue 100%);;
+                width: 160px;
+                height: 160px;
+                span:first-child{
+                    color: $white;
+                    font-size: 3.5rem;
+                    font-weight: 800;
+                }
+                span:nth-child(2){
+                    color: $lightLavender;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                }
+            }
+            .scoreText{
+                text-align: center;
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .scoreDetails{
+                color: $lightLavender;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+        }
+        .summary{
+            display: flex;
+            flex-direction: column;
+            padding: 12px 32px 12px 24px;
+            h2{
+                font-weight: 700;
+                color: $darkGrayBlue;
+
+            }
+            .sumaries{
+                width: 100%;
+                .sumaryCategory{
+                    border: 0px solid transparent;
+                    padding: 8px 6px;
+                    border-radius: 10px;
+                    margin-bottom: 14px;
+                    .sumaryType{
+                        position: relative;
+                        bottom: 3px;
+                        padding-left: 6px;
+                        font-weight: 500;
+                    }
+                    .sumaryNote{
+                        float: right;
+                        padding-right: 8px;
+                        color: $darkGrayBlue;
+                        span{
+                            font-weight: 800;
+                            color: black;
+                        }
+                    }
+                }
+                .sumaryCategory:first-child{
+                    color: $lightRed;
+                    background-color: hsla(0, 100%, 67%, 0.05);
+                }
+                .sumaryCategory:nth-child(2){
+                    color: $orangeyYellow;
+                    background-color: hsla(39, 100%, 56% , 0.05);
+                }
+                .sumaryCategory:nth-child(3){
+                    color: $greenTeal;
+                    background-color: hsla(166, 100%, 37%, 0.05);
+                }
+                .sumaryCategory:nth-child(4){
+                    color: $cobaltBlue;
+                    background-color: hsla(234, 85%, 45%, 0.05);
+                }
+            }
+            #continue{
+                border: none;
+                border-radius: 20px;
+                padding: 12px 8px;
+                margin-top: 24px;
+                font-weight: 700;
+                background: $darkGrayBlue;
+                color: $white;
+                cursor: pointer;
+                &:hover{
+                    background: linear-gradient(0deg, $lightRoyalBlue 0%, $lightSlateBlue 100%);
+                }
+            }
+            
+        }
+    }
+}
