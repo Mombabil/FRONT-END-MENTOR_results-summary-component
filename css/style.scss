@@ -125,3 +125,32 @@
         }
     }
 }
+
+@media screen and (max-width: 1620px){
+    .layout{
+        .container{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 1050px){
+    .layout{
+        .container{
+            width: 66%;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .layout{
+        height: auto;
+        .container{
+            width: 90%;
+            margin: auto;
+            flex-direction: column;
+            .result, .summary{
+                width: auto;
+            }
+
+        }
+    }
+}

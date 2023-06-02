@@ -152,4 +152,30 @@ body {
 .layout .container .summary #continue:hover {
   background: linear-gradient(0deg, #2e2be9 0%, #7857ff 100%);
 }
+
+@media screen and (max-width: 1620px) {
+  .layout .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .layout .container {
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .layout {
+    height: auto;
+  }
+  .layout .container {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .layout .container .result, .layout .container .summary {
+    width: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
